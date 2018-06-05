@@ -1,2 +1,37 @@
 My solution: 
 
+'''Python
+def map (string):
+    """
+    Takes a string of ciphertext. 
+    Returns string with alphabet characters shifted up plus 2
+    eg: a maps to c, f maps to h, z maps to b
+    """
+    
+    newstring = ''
+    
+    alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    
+    for i in string:
+        
+        if i == ' ':
+            newstring += ' '
+        elif i == '.':
+            newstring += '.'
+        elif i == '(':
+            newstring += '('
+        elif i == ')':
+            newstring += ')'
+        elif i == "'":
+            newstring += "'"
+        else:
+            listIndex = alphabet.index(i)
+            
+            if listIndex > 23:
+                listIndex -= 26
+                
+            newstring += alphabet[listIndex+2]
+            
+    print (newstring)
+        
+'''
