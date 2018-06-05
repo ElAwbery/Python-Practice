@@ -1,6 +1,6 @@
 My solution: 
 
-'''Python
+```Python
 def map (string):
     """
     Takes a string of ciphertext. 
@@ -34,4 +34,4 @@ def map (string):
             
     print (newstring)
         
-'''
+```
