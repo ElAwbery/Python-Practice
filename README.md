@@ -1,6 +1,6 @@
 # Python-Practice
 
-Most of these exercises and drills are taken from sources I've found online. There is a link to the source at the top of most files. My solutions are not always the same as those given online, sometimes I provide a more efficient solution or one that is better in some way. Other times the sample solution was clearly better than my own. I usually add comments to explain multiple solution versions. 
+Most of these exercises and drills are taken from sources I've found online. There is a link to the source at the top of most files. My solutions are not always the same as those given by the source, sometimes I provide a more efficient solution or one that is better in some way. Other times the sample solution was better than my own. I usually add comments to explain multiple solution versions. 
 
 If a file does not contain a reference to a source, the problems are my own versions of well known test sets (eg: card-deck, domino problems). 
 
