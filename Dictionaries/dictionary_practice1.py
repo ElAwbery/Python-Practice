@@ -3,8 +3,11 @@
 """
 Created on Wed Jul  4 14:36:42 2018
 
-@author: Charlie
+@author: ElAwbery
 """
+'''
+Dictionary exercises taken from http://greenteapress.com/thinkpython2/thinkpython2.pdf
+'''
 '''
 histogram() takes a string and counts how many times each letter appears
 '''
