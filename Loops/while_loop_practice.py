@@ -3,9 +3,11 @@
 """
 Created on Mon Jul  9 17:15:04 2018
 
-@author: Charlie
+@author: ElAwbery
 """
-
+'''
+Taken from various versions on Stack Overflow
+'''
     
 '''
 Use a while loop to print a triangle of asterisks, like this: 
