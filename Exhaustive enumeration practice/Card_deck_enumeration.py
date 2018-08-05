@@ -3,7 +3,7 @@
 """
 Created on Thu Jun 21 13:22:39 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 Enumerate all the playing cards in a 52-card deck (no jokers). 
@@ -167,38 +167,4 @@ def two_of_kind4():
             
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-            
-          
-    
-    
-    
-    
-    
-    
-    
     
