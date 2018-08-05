@@ -3,7 +3,7 @@
 """
 Created on Sat Aug  4 20:50:49 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 21. Write a Python function to convert a given string to all uppercase if it contains at least 2 
