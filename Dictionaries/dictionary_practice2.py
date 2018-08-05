@@ -3,7 +3,7 @@
 """
 Created on Mon Jul  9 15:05:50 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 These problems are taken from: 
