@@ -3,8 +3,9 @@
 """
 Created on Wed Jun 27 15:08:07 2018
 
-@author: Charlie
+@author: ElAwbery
 """
+
 #Write a function that returns a string written backwards
 
 def backward_written_string(str):
