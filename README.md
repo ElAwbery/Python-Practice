@@ -2,6 +2,8 @@
 
 Most of these exercises and drills are taken from sources I've found online. There is a link to the source at the top of most files. My solutions are not always the same as those given online, sometimes I provide a more efficient solution or one that is better in some way. Other times the sample solution was clearly better than my own. I usually add comments to explain multiple solution versions. 
 
+If a file does not contain a reference to a source, then it is likely the problems are my own versions of well known test sets. 
+
 w3resource provided me with most of the practice I was looking for:
 https://www.w3resource.com/python-exercises/ 
 
