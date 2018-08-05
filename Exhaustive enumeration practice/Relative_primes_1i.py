@@ -3,7 +3,7 @@
 """
 Created on Tue Jun 19 17:22:15 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 Enumerate all relatively prime pairs of integers between 2 and the input number n. 
