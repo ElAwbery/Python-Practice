@@ -3,7 +3,7 @@
 """
 Created on Fri Jun 22 12:20:04 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 
 '''
@@ -36,8 +36,6 @@ all the pairs except one will test as duplicates and be removed
 Here is another attempt: 
 '''
 
-
-
 def domino_pairs2(n):
     """
     n is an integer, the max number of dots per side of a domino pair
@@ -57,40 +55,3 @@ def domino_pairs2(n):
     return domino_set
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
