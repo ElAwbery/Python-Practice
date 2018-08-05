@@ -3,7 +3,7 @@
 """
 Created on Mon Jul  2 13:12:01 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 The code in this file cleans up the code in bin_packing_problems, avoiding repetition.
