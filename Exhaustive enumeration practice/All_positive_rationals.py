@@ -3,7 +3,7 @@
 """
 Created on Wed Jun 20 15:25:23 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 Enumerate all positive rational numbers: 1/1, 1/2, 2/1, 1/3, 3/1, 2/3, 3/2, 1/4, 4/1, 2/4, 4/2, 
