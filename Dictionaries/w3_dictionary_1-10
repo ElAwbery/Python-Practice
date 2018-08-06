@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Aug  6 11:27:35 2018
+
+@author: Charlie
+"""
+
+'''
+Dictionary practice
+Source for these exercises https://www.w3resource.com/python-exercises/dictionary/
+'''
+
+'''
+1. Write a Python script to sort (ascending and descending) a dictionary by value. 
+'''
+numbers = {3:'five', 1: 'six', 2: 'three', 4:'zero', 5:'ten'}
+# to sort by keys:
+print (sorted(numbers.keys())) #or
+print(sorted(list(numbers)))
+
+# to sort by values:
+print(sorted(numbers.values()))
+
+# to sort by keys in descending order:
+print(sorted(numbers.keys(), reverse = True)) #or
+print(sorted(list(numbers), reverse = True))
+
+# to sort by values in descending order: 
+print (sorted(numbers.values(), reverse = True))
+
+
+'''
+2. Write a Python script to add a key to a dictionary. 
+
+Sample Dictionary : {0: 10, 1: 20}
+Expected Result : {0: 10, 1: 20, 2: 30}
+'''
+sample = {0: 10, 1: 20}
+sample.update({2: 30,})
+print(sample)
+
+'''
+3. Write a Python script to concatenate following dictionaries to create a new one. 
+
+Sample Dictionary : 
+dic1={1:10, 2:20} 
+dic2={3:30, 4:40} 
+dic3={5:50,6:60}
+Expected Result : {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+'''
+
+dic1={1:10, 2:20} 
+dic2={3:30, 4:40} 
+dic3={5:50,6:60}
+
+# dictionary.update( ) takes only one argument
+dic4 = {}
+for dic in (dic1, dic2, dic3):
+    dic4.update(dic)
+    
+print(dic4)
+
+''''
+4. Write a Python script to check if a given key already exists in a dictionary. 
+'''
+print(3 in dic4)
+print(10 in dic4)
+
+
+'''
+5. Write a Python program to iterate over a dictionary by key and value, using for loops. 
+'''
+
+for key, value in dic4.items():
+    print ("key =", key, "value =", value)
+    
+
+'''
+6.Write a Python script to generate and print a dictionary with n items, with key value pairs 
+in the form x: x*x,. 
+Sample Dictionary ( n = 5) : 
+Expected Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+'''
+def squares_pairs(n):
+    """
+    n is a positive int
+    returns dictionary with n key:value pairs in the form x:x*x, 
+    """
+    squares = {}
+    
+    for num in range(1, n+1):
+        squares[num] = num*num
+        
+    print(squares)
+    return squares
+
+
+'''
+7. Write a Python script to print a dictionary where the keys are numbers between 1 and 15 
+(both included) and the values are square of keys. 
+Sample Dictionary 
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}
+'''
+print(squares_pairs(15))
+
+
+'''
+8. Write a Python script to merge two Python dictionaries. 
+'''
+# example from https://www.webucator.com/how-to/how-merge-dictionaries-python.cfm
+grades1 = {'Math': 98, 'Science': 87, 'English': 93}
+grades2 = {'Spanish': 94, 'Gym': 79, 'Science': 91}
+
+all_grades = {**grades1, **grades2}
+
+print ("All grades:", all_grades)
+
+
+'''
+9. Write a Python program to iterate over dictionaries using for loops. 
+'''
+# iterates over keys
+for key in all_grades:
+    all_grades[key] += 2
+    
+print(all_grades)
+
+# iterates over keys and values
+for key, value in all_grades.items():
+    print (key, value/100)
+
+'''
+10. Write a Python program to sum all the items in a dictionary. 
+'''
+def sum_dict_values(dict):
+    """
+    Takes a dictionary with int or float values
+    returns sum of all the values
+    """
+    sum_values = 0
+    for key in dict:
+        sum_values += dict[key]
+        
+    return sum_values
+        
+print("sum =", sum_dict_values(squares_pairs(12)))       
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
