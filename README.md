@@ -4,7 +4,7 @@ Most of these exercises and drills are taken from sources I've found online. The
 
 If a file does not contain a reference to a source, the problems are my own versions of well known test sets (eg: card-deck, domino problems). 
 
-w3resource provided me with most of the practice I was looking for:
+w3resource provided me with most of the early practice I was looking for:
 https://www.w3resource.com/python-exercises/ 
 
 The bin packing problems were created from examples in the wikipedia article:
