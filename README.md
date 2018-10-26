@@ -12,7 +12,7 @@ https://en.wikipedia.org/wiki/Bin_packing_problem
 
 Some of the dictionary, lists and loops problems are taken from previous tests and past term exams on the MIT 6.001.edx course in computer science.
 
-Some exercises in the lists, loops and dictionary files were from Think Python by Alan Downey:
-http://greenteapress.com/thinkpython2/thinkpython2.pdf
+Some exercises in the lists, loops and dictionary files were from [Think Python](http://greenteapress.com/thinkpython2/thinkpython2.pdf) by Alan Downey.
+
 
 
