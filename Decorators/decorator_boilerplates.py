@@ -16,7 +16,6 @@ def decorator(func):
     return wrapper_decorator
 
 
-
 def timer(func):
     """Print the runtime of the decorated function"""
     @functools.wraps(func)
@@ -28,7 +27,6 @@ def timer(func):
         print(f"Finished {func.__name__} in {run_time:.4} secs")
         return value
     return wrapper_timer
-
 
 
 def debug(func):
