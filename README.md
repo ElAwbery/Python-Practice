@@ -16,5 +16,8 @@ Some exercises in the lists, loops and dictionary files were from [Think Python]
 
 There are many resources online explaining decorators. The one I liked best was the [RealPython primer on decorators](https://realpython.com/primer-on-python-decorators/). 
 
+My regular expression exercises are taken from the Regex tutorial on [πrogram](https://www.pirogram.com). 
+This tutorial is designed for Python users and takes you from scratch with practice exercises for each step in the process of building the regex syntax. By the end of the tutorial I found I was automatically using the syntax without thinking about it. 
+
 
 
