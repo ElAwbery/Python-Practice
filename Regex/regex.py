@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Thu May 16 13:19:12 2019
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 All of the exercises in this file are taken from https://www.pirogram.com
+The pirogram site has explanations, a walk-through and interactive tests.
 '''
 # SEction 1, Regex introduction
 import re
@@ -127,8 +126,7 @@ Write a function match_movie_name that takes a movie name as input.
 It returns True if the movie has a word which is at least 4 letter long 
 followed by another word which is at least 3 letter long. 
 Otherwise, it returns False.
-'''
-    
+'''    
 REGEX = r"\w\w\w\w\s\w\w\w"
 
 def match_movie_name(movie_name):
@@ -167,8 +165,7 @@ assert match_movie_name('The Ghosts') == True
 Write a function match_movie_name that takes a movie name as input. 
 It returns True if the movie has a number surrounded by one letter on each side. 
 Otherwise, it returns False.
-'''   
-    
+'''      
 REGEX=r"\D\d\D"  
   
 def match_movie_name(movie_name):
@@ -188,7 +185,6 @@ Write a function match_movie_name that takes a movie name as input.
 It returns True if the movie has two consecutive non-word letters (Hint: use \W). 
 Otherwise, it returns False.
 '''
-
 REGEX=r"\W\W"   
  
 def match_movie_name(movie_name):
@@ -433,7 +429,8 @@ assert match_movie_name('Star Wars: The Last Jedi') == True
 assert match_movie_name('2010: the year we make contact') == True
 assert match_movie_name('Braveheart') == False
 
-'''Write a function match_sentence that takes a string as input. 
+'''
+Write a function match_sentence that takes a string as input. 
 It returns True if the string has two years. Otherwise, it returns False.
 '''
 REGEX=r"\d{4}.+\d{4}"
@@ -703,6 +700,7 @@ assert extract_item_quantity('bowls :6') == ('bowls', 6)
 assert extract_item_quantity('cups   :   8') == ('cups', 8)
 assert extract_item_quantity('pans: ') == None
 assert extract_item_quantity(': 4') == None
+
 '''
 Write a function extract_middle_name that takes a name as input. 
 It returns the middle name of the person by using named groups in regex.
@@ -760,31 +758,4 @@ assert re.split(REGEX_PATTERN, 'Onion:2') == ['Onion', '2']
 text = "The growth was more in 2001 compred to 2002."
 years = re.findall(r"\d+", text)
 print(years)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+  
