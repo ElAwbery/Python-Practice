@@ -1,0 +1,87 @@
+# Definition: 
+The first of Chomsky's 4 grammar types, regular grammars, generate regular expressions. 
+
+A regex is a sequence of symbols and characters expressing a string or pattern to be searched for within a longer piece of text.
+
+In programming, a sequence of characters that define a search pattern. Used by string searching algorithms for find, and find & replace. 
+
+# History:
+Invented by Stephen Cole Kleene who formalized the description of a regular language in the 50s. 
+Kleene's theorem is the equivalence of regexs and finite automata. 
+
+# Application:
+Different sytaxes exist for writing regexs. They are standards: e.g.: the POSIX and the Perl syntaxes. 
+
+# Special characters:
+
+Some special characters:  ., ?, (, ), *, +, ^, $, \, [, ]
+If you want to match a character that is also a special character, preceed the character with \
+
+Characters that have meta meaning with no context:
+
+^ -- exception (do not include the following in the search)
+() -- grouping/capture
+? -- zero or one of the preceding sequence
++ -- one or more of the preceding sequence
+* -- zero or more of the preceding sequence
+[] -- character class
+
+| -- alternation
+{} -- length assertion
+$ -- zero width end of line
+
+\w is equivalent to [A-Za-z0-9_]
+\W is opposite of \w i.e. [^A-Za-z0-9_]
+\s is equivalent to [ \t\r\n]
+\S is opposite of \s i.e. [^ \t\r\n]
+\d is equivalent to [0-9]
+\D is opposite of \d i.e. [^0-9]
+. is the most interesting shortcut and it matches all characters without exception.
+
+This excludes :, @, and % from having any special/meta meaning in the raw context.
+
+When you put multiple characters in [ ] regex looks to match any of them. No comma between elements.
+For digits, you can skip writing consecutive ones using e.g.: [0-9]
+These are ranges. You can use alphabet ranges too. 
+Don't forget you can only match one character from the range at a time. 
+
+{m,n} has four variations:
+
+{m,n} matches at least m and at most n occurrences.
+{m} matches exactly m occurrences.
+{m,} matches at least m occurrneces (no upper bound).
+{,n} matches at least 0 and at most n occurrences.
+
+? stands for {0,1}. A pattern should match at least 0 and at most 1 time. Effectively, it's another way of saying that the pattern may or may not be there. It's used very frequently.
+
+* stands for {0,} which means at least 0 and at most infinite matches. BA*T would match BT, BAT, BAAAAAAAAAAAAAAAAAAAAAT etc.
++ stands for {1,} which matches at least 1 and at most infinite times.
+
+In regex, \b matches start and end of a word boundary. 
+In regex, a word is an unbroken sequence of [A-Za-z0-9_] or \w. The sentence cat jumped has two words: cat and jumped. OTOH, key:value has two words: key and value. Even http-proto has two words: http and proto.
+
+Just like words have boundaris that we can match with \b, lines also have boundaries that we can match with ^ (start of line) and $ (end of line).
+
+The objects returned from regex searches are match objects. If the object has value none, it has a boolean value of False. If re.search(pattern, whatever) returns an object, it has a boolean value True. You can use simply if match: to test the boolean value. 
+
+match.group returns one or more subgroups, either a string, or a tuple with string elements. 
+You can use ordinary parens within your regex search to separate out words. For example, if you want to get a first name and a last name:
+re.search(r"(\w+) (\w+)", "firstname stuff lastname")
+match.group() returns a string with all of the results. 
+After that, each pattern defined within () becomes yet another match group. 
+The full match is always the group 0. After that, each () leads to the next group number. 
+match.group() returns all the results in a string
+match.group(1) returns the first word
+match.group(2) the second word, & so on. 
+
+?P declares that we will give a name to the group
+Then name the group <group_name> follwed by the pattern. e.g.: (?P<first_name>\w+)
+
+The regex split pattern is powerful - can extract words from the string and put them into a list:
+REGEX=r"\W+"
+
+result = re.split(REGEX, "long, string  , of : words,with problematic, data, entry")
+['long', 'string', 'of', 'words', 'with', 'problematic', 'data', 'entry'
+
+The method re.findall() is useful when you are trying to find multiple occurrences of a pattern within text. For example, if we want to find all years mentioned in a given text, findall() would be pretty helpful. Example:]
+
